@@ -1,10 +1,6 @@
 # Rust
 
-Going through and trying the exercises in the rust lang book 🦀📚
-
-`rustc main.rs` to compile the code 
-
-`Cargo` is rust's build system and package manager
+### Going through and trying the exercises in the [rust lang book](https://doc.rust-lang.org/book/) 🦀📚
 
 
 
