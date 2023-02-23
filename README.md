@@ -6,7 +6,11 @@ Going through and trying the exercises in the rust lang book 🦀📚
 
 `Cargo` is rust's build system and package manager
 
-To create a new project using cargo, run this command:
 
-`cargo new <whatever>`
+
+`cargo new <whatever>` creates a new project
+
+`cargo run` compiles then runs the generated executable (path to exe is `./target/debug/<whatever>`)
+
+`cargo check` checks if your code compiles but doesn't produce an executable
 
