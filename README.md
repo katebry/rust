@@ -2,7 +2,7 @@
 
 ### Going through the exercises in the [rust lang book](https://doc.rust-lang.org/book/) 🦀📚
 
-
+### Cargo commands
 
 `cargo new <whatever>` creates a new project
 
