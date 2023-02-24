@@ -25,6 +25,8 @@
 
 [Data Types](https://doc.rust-lang.org/stable/book/ch03-02-data-types.html)
 
+[Ownership](https://doc.rust-lang.org/stable/book/ch04-01-what-is-ownership.html)
+
 ### Useful info 
 
 - variables are immutable by default, to make a variable mutable you have to use `mut` 🐶
@@ -38,3 +40,11 @@
 - arrays have a fixed length, every element of the array must be of the same type
 - rust is an expression based language 👄💬 (expressions evaluate to a resultant value)
 - expressions do not include ending semicolons - if you add a semicolon to the end of an expression, you turn it into a statement & it will not return a value
+
+### Ownership
+
+The main purpose of ownership is to manage heap data
+
+1. Each value in Rust has an *owner*
+2. There can only be one owner at a time
+3. When the owner goes out of scope, the value will be dropped
