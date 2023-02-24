@@ -33,3 +33,6 @@
 - rust is a statically typed language, which means it must know the types of all variables at compile time
 - rust has 4 primary scalar types: integers, floating-point numbers, Booleans and characters
 - unsigned numbers are positive 😊😄🤗 (and have a `u` in the typing)
+- `char` literals use single quotes, whilst string literals use double: `let response = "they do indeed"`
+- rust has two primitive compound types, `tuples` and `arrays` - tuples have a fixed length, once declared they cannot grow or shrink in size & they can contain a mixture of types
+- arrays have a fixed length, every element of the array must be of the same type
