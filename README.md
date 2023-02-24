@@ -25,7 +25,7 @@
 
 [Data Types](https://doc.rust-lang.org/stable/book/ch03-02-data-types.html)
 
-### Useful extras
+### Useful info 
 
 - variables are immutable by default, to make a variable mutable you have to use `mut` 🐶
 - `const`(ants) are always immutable, naming convention is to use all caps, e.g. `const USE_ALL_CAPS: String`
@@ -36,3 +36,5 @@
 - `char` literals use single quotes, whilst string literals use double: `let response = "they do indeed"`
 - rust has two primitive compound types, `tuples` and `arrays` - tuples have a fixed length, once declared they cannot grow or shrink in size & they can contain a mixture of types
 - arrays have a fixed length, every element of the array must be of the same type
+- rust is an expression based language 👄💬 (expressions evaluate to a resultant value)
+- expressions do not include ending semicolons - if you add a semicolon to the end of an expression, you turn it into a statement & it will not return a value
