@@ -40,6 +40,7 @@
 - arrays have a fixed length, every element of the array must be of the same type
 - rust is an expression based language 👄💬 (expressions evaluate to a resultant value)
 - expressions do not include ending semicolons - if you add a semicolon to the end of an expression, you turn it into a statement & it will not return a value
+- a slice is a kind of reference, so it does not have ownership
 
 ### Ownership
 
