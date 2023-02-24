@@ -21,6 +21,10 @@
 
 [Crate registry](https://crates.io/)
 
+[Keywords in Rust](https://doc.rust-lang.org/stable/book/appendix-01-keywords.html)
+
 ### Useful extras
 
 - variables are immutable by default, to make a variable mutable you have to use `mut` 🐶
+- `const`(ants) are always immutable, naming convention is to use all caps, e.g. `const USE_ALL_CAPS: String`
+- variables declared with `let` can be shadowed 👻, e.g. `let x = 5; let x = x + 1` in this case the end value of `x` is 6 
