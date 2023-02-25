@@ -4,6 +4,15 @@ struct Rectangle {
     height: u32,
 }
 
+impl Rectangle {
+    fn area(&self) -> u32 {
+        self.width * self.height
+    }
+    fn perimeter(&self) -> u32 {
+        self.width + self.height * 2
+    }
+}
+
 fn main() {
     let rect1 = Rectangle {
         width: 30,
@@ -11,7 +20,8 @@ fn main() {
     };
 
     println!("rect1 is {:#?}", rect1);
-    println!("The area of the rectangle is {} square pixels.", area(&rect1));
+    println!("The area of the rectangle is {} square pixels.", rect1.area());
+    println!("The perimeter of the rectangle is {}", rect1.perimeter());
 
     let scale = 2;
     let rect2 = Rectangle {
@@ -20,8 +30,4 @@ fn main() {
     };
 
     dbg!(&rect2);
-}
-
-fn area(rectangle: &Rectangle) -> u32 {
-    rectangle.width * rectangle.height
 }
