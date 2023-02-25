@@ -41,6 +41,7 @@
 - rust is an expression based language 👄💬 (expressions evaluate to a resultant value)
 - expressions do not include ending semicolons - if you add a semicolon to the end of an expression, you turn it into a statement & it will not return a value
 - a slice is a kind of reference, so it does not have ownership
+- a struct is a custom data type that lets you package together and name multiple related values that make up a meaningful group - a struct is like an object's data attributes
 
 ### Ownership
 
