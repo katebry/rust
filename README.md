@@ -43,6 +43,9 @@
 - a slice is a kind of reference, so it does not have ownership
 - a struct is a custom data type that lets you package together and name multiple related values that make up a meaningful group - a struct is like an object's data attributes
 - all functions defined within an `impl` block are called *associated functions* because they're associated with the type named after the `impl`
+- *binary crates* are programs you can compile to an executable that you can run
+- *library crates* don't have a main function and they don't compile to an executable (this type of crate is also known as a *library*)
+- a *package* is a bundle of one or more crates, it contains a *Cargo.toml* file that describes how to build said crates
 
 ### Ownership
 
