@@ -31,6 +31,8 @@
 
 [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/)
 
+[Vectors](https://doc.rust-lang.org/stable/nomicon/vec/vec.html)
+
 ### Useful info 
 
 - variables are immutable by default, to make a variable mutable you have to use `mut` 🐶
@@ -54,6 +56,7 @@
 - you should use *idiomatic `use` paths* - that means specifying the parent module when calling the function to make it clear that the function being used isn't locally defined
 - when bringing in `structs` and `enums` however, you can specify the full path, e.g. `use std::collections::HashMap;` then within your function you can call `HashMap::<whatever>`
 - you can use the `glob` operator to bring all public items defined in a path into scope, e.g. `use std::collections::*;`
+- when creating new Vectors, you can use the `vec!` macro, e.g. `let v = vec![1, 2, 3];`
 
 ### Ownership
 
