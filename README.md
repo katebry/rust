@@ -53,6 +53,7 @@
 - code within a module is private by default
 - you should use *idiomatic `use` paths* - that means specifying the parent module when calling the function to make it clear that the function being used isn't locally defined
 - when bringing in `structs` and `enums` however, you can specify the full path, e.g. `use std::collections::HashMap;` then within your function you can call `HashMap::<whatever>`
+- you can use the `glob` operator to bring all public items defined in a path into scope, e.g. `use std::collections::*;`
 
 ### Ownership
 
