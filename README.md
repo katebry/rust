@@ -51,6 +51,8 @@
 - *library crates* don't have a main function and they don't compile to an executable (this type of crate is also known as a *library*)
 - a *package* is a bundle of one or more crates, it contains a *Cargo.toml* file that describes how to build said crates
 - code within a module is private by default
+- you should use *idiomatic `use` paths* - that means specifying the parent module when calling the function to make it clear that the function being used isn't locally defined
+- when bringing in `structs` and `enums` however, you can specify the full path, e.g. `use std::collections::HashMap;` then within your function you can call `HashMap::<whatever>`
 
 ### Ownership
 
