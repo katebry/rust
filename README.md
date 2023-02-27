@@ -27,6 +27,10 @@
 
 [Ownership](https://doc.rust-lang.org/stable/book/ch04-01-what-is-ownership.html)
 
+[Modules Cheat Sheet](https://doc.rust-lang.org/stable/book/ch07-02-defining-modules-to-control-scope-and-privacy.html)
+
+[Rust API Guidelines](https://rust-lang.github.io/api-guidelines/)
+
 ### Useful info 
 
 - variables are immutable by default, to make a variable mutable you have to use `mut` 🐶
@@ -46,6 +50,7 @@
 - *binary crates* are programs you can compile to an executable that you can run
 - *library crates* don't have a main function and they don't compile to an executable (this type of crate is also known as a *library*)
 - a *package* is a bundle of one or more crates, it contains a *Cargo.toml* file that describes how to build said crates
+- code within a module is private by default
 
 ### Ownership
 
