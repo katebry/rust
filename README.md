@@ -66,6 +66,7 @@
 - all values and keys within a `hashmap` must have the same type
 - rust has two types of errors: `Result<T, E>` for recoverable errors and the `panic!` macro for unrecoverable errors
 - when a `panic` occurs the program starts `unwinding`, which means rust walks back up the stack and cleans up the data from each function it encounters; this a lot of work so you can circumvent it by setting `[profile.release]/n panic = 'abort'` in your `Cargo.toml` 
+- *propagating errors*: when a function's implementation calls something that might fail, instead of handling the error within the function itself, you can return the error to the calling code so that it can decide what to do 
 
 ### Ownership
 

@@ -3,6 +3,10 @@ use std::io::ErrorKind;
 
 fn main() {
 
+    // let greeting_file = File::open("hello.txt").unwrap();
+
+    // let greeting_file = File::open("hello.txt").expect("hello.txt should be included in this project");
+
     let greeting_file = File::open("hello.txt").unwrap_or_else(|error| {
         if error.kind() == ErrorKind::NotFound {
             File::create("hello.txt").unwrap_or_else(|error| {
