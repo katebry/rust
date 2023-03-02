@@ -58,6 +58,7 @@
 - you can use the `glob` operator to bring all public items defined in a path into scope, e.g. `use std::collections::*;`
 - when creating new Vectors, you can use the `vec!` macro, e.g. `let v = vec![1, 2, 3];`
 - many of the same operations available with `Vec<T>` are available with `String` as well because `String` is implemented as a wrapper around a vector of bytes with some extra guarantees, restrictions and capabilities
+- you can use `contains` for searching in a string and `replace` for substituting parts of a string with another string
 
 ### Ownership
 
