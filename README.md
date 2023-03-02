@@ -62,6 +62,7 @@
 - many of the same operations available with `Vec<T>` are available with `String` as well because `String` is implemented as a wrapper around a vector of bytes with some extra guarantees, restrictions and capabilities
 - you can use `contains` for searching in a string and `replace` for substituting parts of a string with another string
 - all values and keys within a `hashmap` must have the same type
+- rust has two types of errors: `Result<T, E>` for recoverable errors and the `panic!` macro for unrecoverable errors
 
 ### Ownership
 
