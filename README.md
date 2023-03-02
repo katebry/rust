@@ -35,6 +35,8 @@
 
 [SipHash](https://en.wikipedia.org/wiki/SipHash)
 
+[Buffer Overread](https://hashrust.com/blog/memory-safey-in-rust-part-1/)
+
 ### Useful info 
 
 - variables are immutable by default, to make a variable mutable you have to use `mut` 🐶
@@ -63,6 +65,7 @@
 - you can use `contains` for searching in a string and `replace` for substituting parts of a string with another string
 - all values and keys within a `hashmap` must have the same type
 - rust has two types of errors: `Result<T, E>` for recoverable errors and the `panic!` macro for unrecoverable errors
+- when a `panic` occurs the program starts `unwinding`, which means rust walks back up the stack and cleans up the data from each function it encounters; this a lot of work so you can circumvent it by setting `[profile.release]/n panic = 'abort'` in your `Cargo.toml` 
 
 ### Ownership
 
