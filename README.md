@@ -37,6 +37,8 @@
 
 [Buffer Overread](https://hashrust.com/blog/memory-safey-in-rust-part-1/)
 
+[Generic Types](https://doc.rust-lang.org/stable/book/ch10-01-syntax.html)
+
 ### Useful info 
 
 - variables are immutable by default, to make a variable mutable you have to use `mut` 🐶
