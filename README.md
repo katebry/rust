@@ -43,6 +43,8 @@
 
 [Lifetimes](https://doc.rust-lang.org/stable/book/ch10-03-lifetime-syntax.html)
 
+[Lifetime Elision](https://doc.rust-lang.org/nomicon/lifetime-elision.html)
+
 ### Useful info 
 
 - variables are immutable by default, to make a variable mutable you have to use `mut` 🐶
