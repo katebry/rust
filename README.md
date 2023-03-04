@@ -39,6 +39,8 @@
 
 [Generic Types](https://doc.rust-lang.org/stable/book/ch10-01-syntax.html)
 
+[Monomorphisation](https://rustc-dev-guide.rust-lang.org/backend/monomorph.html)
+
 ### Useful info 
 
 - variables are immutable by default, to make a variable mutable you have to use `mut` 🐶
@@ -69,6 +71,7 @@
 - rust has two types of errors: `Result<T, E>` for recoverable errors and the `panic!` macro for unrecoverable errors
 - when a `panic` occurs the program starts `unwinding`, which means rust walks back up the stack and cleans up the data from each function it encounters; this a lot of work so you can circumvent it by setting `[profile.release]/n panic = 'abort'` in your `Cargo.toml` 
 - *propagating errors*: when a function's implementation calls something that might fail, instead of handling the error within the function itself, you can return the error to the calling code so that it can decide what to do 
+- generic types won't make your program run any slower than it would with concrete types - rust accomplishes this by performing *monomorphization* (the process of turning generic code into specific code by filling in the concrete types that are used when compiled)
 
 ### Ownership
 
