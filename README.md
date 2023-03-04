@@ -41,6 +41,8 @@
 
 [Monomorphisation](https://rustc-dev-guide.rust-lang.org/backend/monomorph.html)
 
+[Lifetimes](https://doc.rust-lang.org/stable/book/ch10-03-lifetime-syntax.html)
+
 ### Useful info 
 
 - variables are immutable by default, to make a variable mutable you have to use `mut` 🐶
@@ -73,6 +75,9 @@
 - *propagating errors*: when a function's implementation calls something that might fail, instead of handling the error within the function itself, you can return the error to the calling code so that it can decide what to do 
 - generic types won't make your program run any slower than it would with concrete types - rust accomplishes this by performing *monomorphization* (the process of turning generic code into specific code by filling in the concrete types that are used when compiled)
 - *traits* in rust are similar to *interfaces* in other languages
+- every reference in rust has a *lifetime*, which is the scope for which that reference is valid - the main aim of lifetimes is to prevent *dangling references* (these cause a program to reference data other than what's intended)
+- *lifetime syntax* is about connecting the lifetimes of various parameters and return values to functions; once they're connected, rust has enough information to allow memory-safe operations and disallow operations that would create dangling pointers or otherwise violate memory safety
+- rust has a *borrow checker* that compares scopes to determine whether all borrows are valid
 
 ### Ownership
 
