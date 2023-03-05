@@ -14,6 +14,10 @@
 
 `cargo doc --open` to build documentation based on your dependencies
 
+`cargo new <whatever> lib` to create a library
+
+`cargo test` to run tests
+
 
 ### Useful resources
 
@@ -44,6 +48,10 @@
 [Lifetimes](https://doc.rust-lang.org/stable/book/ch10-03-lifetime-syntax.html)
 
 [Lifetime Elision](https://doc.rust-lang.org/nomicon/lifetime-elision.html)
+
+[Testing](https://doc.rust-lang.org/stable/book/ch11-01-writing-tests.html)
+
+[Unstable Testing](https://doc.rust-lang.org/stable/unstable-book/library-features/test.html)
 
 ### Useful info 
 
