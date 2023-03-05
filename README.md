@@ -14,7 +14,7 @@
 
 `cargo doc --open` to build documentation based on your dependencies
 
-`cargo new <whatever> lib` to create a library
+`cargo new <whatever> --lib` to create a library
 
 `cargo test` to run tests
 
