@@ -99,6 +99,10 @@
 - *lifetime syntax* is about connecting the lifetimes of various parameters and return values to functions; once they're connected, rust has enough information to allow memory-safe operations and disallow operations that would create dangling pointers or otherwise violate memory safety
 - rust has a *borrow checker* that compares scopes to determine whether all borrows are valid
 - you can add an `#[ignore]` flag to tests to prevent them from running
+- *unit tests* are small and focused, they test one module in isolation at a time and can test private interfaces
+- *integration tests* are entirely external to your library and use your code in the same way any other external code would, using only the pulic interfaces and potentially exercising multiple modules per test
+- when you use the `#[cfg(test)]` annotation you tell rust to compile and run the test code only when `cargo test` is run (not `cargo build`)
+- only *library* crates expose functions that other crates can use; *binary* crates are meant to be run on their own
 
 ### Ownership
 
