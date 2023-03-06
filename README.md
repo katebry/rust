@@ -18,6 +18,16 @@
 
 `cargo test` to run tests
 
+`cargo test --help` to display the options available when testing
+
+`cargo test -- --test-threads=1` to manipulate the number of threads used (and in this case make it so tests run one at a time aka avoiding *parallelism*)
+
+`cargo test -- --show-output` to see the printed values within a function during a test
+
+`cargo test -- --ignored` to run only ignored tests
+
+`cargo test -- --include-ignored` to run all tests
+
 
 ### Useful resources
 
@@ -88,6 +98,7 @@
 - every reference in rust has a *lifetime*, which is the scope for which that reference is valid - the main aim of lifetimes is to prevent *dangling references* (these cause a program to reference data other than what's intended)
 - *lifetime syntax* is about connecting the lifetimes of various parameters and return values to functions; once they're connected, rust has enough information to allow memory-safe operations and disallow operations that would create dangling pointers or otherwise violate memory safety
 - rust has a *borrow checker* that compares scopes to determine whether all borrows are valid
+- you can add an `#[ignore]` flag to tests to prevent them from running
 
 ### Ownership
 
