@@ -14,3 +14,4 @@ then a case insensitive search
 will be conducted 
 
 IGNORE_CASE=1 cargo run -- to poem.txt
+$ cargo run -- to poem.txt > output.txt
