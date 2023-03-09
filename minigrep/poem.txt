@@ -7,3 +7,10 @@ How dreary to be somebody!
 How public, like a frog
 To tell your name the livelong day
 To an admiring bog!
+To run this program with the environment 
+variable set, 
+enter the below command 
+then a case insensitive search 
+will be conducted 
+
+IGNORE_CASE=1 cargo run -- to poem.txt
